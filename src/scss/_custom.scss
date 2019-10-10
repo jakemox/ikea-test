@@ -1,0 +1,21 @@
+$font-family-base: 'Montserrat', sans-serif;
+$h1-font-size: 2rem;
+$h2-font-size: 1.2rem;
+$small-font-size: 90%;
+$primary: #001043;
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 2),
+    6: ($spacer * 3)
+  ),
+  $spacers
+);
+$secondary: #e5e5e5;
+$gray-800: #7f7f7f;

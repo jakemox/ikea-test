@@ -1,0 +1,113 @@
+body {
+    color: $primary;
+}
+
+.card {
+    &:hover {
+        @extend .shadow
+    }
+    
+    &:focus-within {
+        outline: none;
+        box-shadow: 0 0 0 4px $primary;
+    }
+}
+
+.btn-circle {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 1.4rem;
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.btn-circle-lg {
+    display: none;
+    width: 136px;
+    height: 136px;
+    line-height: 136px;
+    color: white;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 2.5rem;
+
+    &:hover {
+        background-color: $gray-800;
+        border-color: $gray-800;
+        color: white;
+    }
+    
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        background-color: $gray-800;
+        border-color: $gray-800;
+    }
+}
+
+.btn-left {
+    position: absolute;
+    top: calc(50% - 68px);
+    left: -110px;
+    transition: all ease 0.2s;
+
+    &:hover {
+        left: -68px;
+    }
+
+    &:focus {
+        left: -68px;
+    }
+
+    i {
+        left: 30px;
+    }
+}
+
+.btn-right {
+    position: absolute;
+    top: calc(50% - 68px);
+    right: -110px;
+    transition: all ease 0.2s;
+
+    &:hover {
+        right: -68px;
+    }
+
+    &:focus {
+        right: -68px;
+    }
+
+    i {
+        right: 30px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    section {
+        position: fixed;
+    }
+
+    .btn-circle-lg {
+        display: inline-block;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}
